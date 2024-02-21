@@ -20,11 +20,9 @@ module.exports = {
     es6: true,
   },
 
-  // Base config
   extends: ["eslint:recommended"],
 
   overrides: [
-    // React
     {
       files: ["**/*.{js,jsx,ts,tsx}"],
       plugins: ["react", "jsx-a11y"],
@@ -47,9 +45,10 @@ module.exports = {
           typescript: {},
         },
       },
+      rules: {
+        "react/no-unknown-property": 0,
+      },
     },
-
-    // Typescript
     {
       files: ["**/*.{ts,tsx}"],
       plugins: ["@typescript-eslint", "import"],
