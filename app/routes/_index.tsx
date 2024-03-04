@@ -1,5 +1,6 @@
 import GallaeryImages, { type Photo } from "~/components/GallaeryImages";
 import { useEffect, useState } from "react";
+import Button from "~/components/Button";
 
 export default function Index() {
   const [photos, setPhotos] = useState<Photo[]>([]);
@@ -12,6 +13,7 @@ export default function Index() {
 
   return (
     <div>
+      <Button />
       <GallaeryImages photos={photos} />
     </div>
   );
