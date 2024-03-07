@@ -12,7 +12,7 @@ export default function Index() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-red-500">
       <Button />
       <GallaeryImages photos={photos} />
     </div>
