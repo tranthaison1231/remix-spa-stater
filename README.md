@@ -1,4 +1,4 @@
-# Fast API Basic
+# Remix SPA
 
 ## Overview
 
@@ -8,6 +8,7 @@ This project provides a foundational structure for building React frontend web.
 
 - 🚀 Remix
 - 🛡️ Biome
+- 💎 Tailwind
 
 ## Setup
 
