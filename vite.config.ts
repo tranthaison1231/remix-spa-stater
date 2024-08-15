@@ -4,5 +4,5 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [remix({ ssr: false }), tsconfigPaths(), tailwindcss()],
+	plugins: [remix({ ssr: false }), tsconfigPaths(), tailwindcss()],
 });
