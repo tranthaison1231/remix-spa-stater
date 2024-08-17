@@ -9,6 +9,7 @@ This project provides a foundational structure for building React frontend web.
 - 🚀 Remix
 - 🛡️ Biome
 - 💎 Tailwind
+- 💋 Shadcn UI
 
 ## Setup
 
