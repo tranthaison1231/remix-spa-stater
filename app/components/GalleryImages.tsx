@@ -5,11 +5,11 @@ export interface Photo {
 	thumbnailUrl: string;
 }
 
-interface GallaeryImagesProps {
+interface GalleryImagesProps {
 	photos: Photo[];
 }
 
-export default function GallaeryImages({ photos }: GallaeryImagesProps) {
+export default function GalleryImages({ photos }: GalleryImagesProps) {
 	return (
 		<div>
 			{photos.map((photo) => (

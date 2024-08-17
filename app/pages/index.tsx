@@ -1,4 +1,4 @@
-import GallaeryImages, { type Photo } from "~/components/GallaeryImages";
+import GalleryImages, { type Photo } from "~/components/GalleryImages";
 import { useEffect, useState } from "react";
 import { Button } from "~/components/ui/button";
 
@@ -18,7 +18,7 @@ export default function Index() {
         business
       </h1>
       <Button> Hello </Button>
-      <GallaeryImages photos={photos} />
+      <GalleryImages photos={photos} />
     </div>
   );
 }
