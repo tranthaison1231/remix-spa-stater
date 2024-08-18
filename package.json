@@ -4,18 +4,17 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "sst:deploy": "sst deploy --stage production",
+    "sst:remove": "sst remove --stage production",
     "build": "remix vite:build",
+    "preview": "vite preview --host",
+    "check-types": "tsc",
     "dev": "remix vite:dev",
-    "lint": "biome lint --write",
     "format": "biome format --write",
-    "start": "http-server build/client/",
-    "check-types": "tsc"
+    "lint": "biome lint --write"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
-    "@react-three/drei": "^9.111.0",
-    "@react-three/fiber": "^8.17.5",
-    "@react-three/rapier": "^1.4.0",
     "@remix-run/node": "^2.11.2",
     "@remix-run/react": "^2.11.2",
     "class-variance-authority": "^0.7.0",
@@ -38,6 +37,7 @@
     "autoprefixer": "^10.4.20",
     "http-server": "^14.1.1",
     "postcss": "^8.4.41",
+    "sst": "3.0.42",
     "remix-development-tools": "^4.2.2",
     "remix-flat-routes": "^0.6.5",
     "tailwindcss-intersect": "^2.0.1",

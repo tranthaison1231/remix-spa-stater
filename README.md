@@ -10,6 +10,7 @@ This project provides a foundational structure for building React frontend web.
 - 🛡️ Biome
 - 💎 Tailwind
 - 💋 Shadcn UI
+- 🚢 SST
 
 ## Setup
 
@@ -24,6 +25,10 @@ bun install
 ```bash
 bun dev
 ```
+
+## How to deploy project
+
+- This project will be deployed on S3 and Cloudfront. Please ensure credentials with S3 and Cloudfront permissions are added.
 
 ## Script
 
