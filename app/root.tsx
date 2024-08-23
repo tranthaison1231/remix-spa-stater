@@ -1,27 +1,20 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Outlet, Scripts } from "@remix-run/react";
 import "./globals.css";
 
-export default function App() {
+export default function Component() {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-        <title> Remix</title>
-      </head>
-      <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+    <>
+      <Outlet />
+      <Scripts />
+    </>
+  );
+}
+
+export function HydrateFallback() {
+  return (
+    <>
+      <p>Loading...</p>
+      <Scripts />
+    </>
   );
 }

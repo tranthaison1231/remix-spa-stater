@@ -5,4 +5,3 @@ declare module "sst" {
   export interface Resource {
   }
 }
-export {}

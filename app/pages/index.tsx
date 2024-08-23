@@ -17,7 +17,7 @@ export default function Index() {
         Data to <span className="text-neon-cyan">enrich</span> your online
         business
       </h1>
-      <Button> Hello </Button>
+      <Button> Hello world</Button>
       <GalleryImages photos={photos} />
     </div>
   );
