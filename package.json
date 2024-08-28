@@ -11,7 +11,8 @@
     "check-types": "tsc",
     "dev": "remix vite:dev",
     "format": "biome format --write",
-    "lint": "biome lint --write"
+    "lint": "biome lint --write",
+    "test": "vitest run"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -31,20 +32,24 @@
     "@remix-run/dev": "^2.11.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/container-queries": "^0.1.1",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "@types/three": "^0.167.2",
     "autoprefixer": "^10.4.20",
     "http-server": "^14.1.1",
+    "jsdom": "^25.0.0",
     "postcss": "^8.4.41",
-    "sst": "3.0.70",
     "remix-development-tools": "^4.4.1",
     "remix-flat-routes": "^0.6.5",
+    "sst": "3.0.74",
     "tailwindcss-intersect": "^2.0.1",
     "typescript": "^5.5.4",
     "vite": "^5.4.2",
     "vite-plugin-svgr": "^4.2.0",
-    "vite-tsconfig-paths": "^5.0.1"
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.0.5"
   },
   "engines": {
     "node": ">=18.0.0"
