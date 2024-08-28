@@ -1,11 +1,26 @@
 import {
   Links,
   Meta,
+  type MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import "./globals.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Very cool app | Remix" },
+    {
+      property: "og:title",
+      content: "Very cool app",
+    },
+    {
+      name: "description",
+      content: "This app is the best",
+    },
+  ];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

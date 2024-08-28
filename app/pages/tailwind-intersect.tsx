@@ -1,3 +1,9 @@
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Very cool app | Tailwind" }];
+};
+
 export default function TailwindIntersect() {
   return (
     <div className="bg-white p-8 lg:p-12 lg:text-lg">
