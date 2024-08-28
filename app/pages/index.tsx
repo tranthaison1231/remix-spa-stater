@@ -14,10 +14,10 @@ export default function Index() {
   return (
     <div>
       <h1 className="font-display text-5xl">
-        Data to <span className="text-neon-cyan">enrich</span> your online
+        Data to <span className="text-neon-cyan">enrich2929</span> your online
         business
       </h1>
-      <Button> Hello world</Button>
+      <Button> Hello world 123 456 789</Button>
       <GalleryImages photos={photos} />
     </div>
   );
