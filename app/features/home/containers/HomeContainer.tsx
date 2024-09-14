@@ -20,12 +20,13 @@ export default function HomeContainer() {
         Data to <span className="text-neon-cyan">enrich2929</span> your online
         business
       </h1>
-      <Link to="/tailwind-intersect">
-        <Button>Tailwind Intersect</Button>
-      </Link>
-      <Link to="/not-found">
-        <Button>NotFound</Button>
-      </Link>
+
+      <Button asChild>
+        <Link to="/tailwind-intersect">Tailwind Intersect</Link>
+      </Button>
+      <Button asChild>
+        <Link to="/not-found">NotFound</Link>
+      </Button>
       <GalleryImages photos={photos} />
     </div>
   );

@@ -5,21 +5,22 @@ import { flatRoutes } from "remix-flat-routes";
 import svgr from "vite-plugin-svgr";
 import { remixDevTools } from "remix-development-tools";
 
+const isVitest = Boolean(process.env.VITEST);
+
+const remixPlugin = remix({
+  ssr: false,
+  ignoredRouteFiles: ["**/.*"],
+  routes: async (defineRoutes) => flatRoutes("pages", defineRoutes),
+  appDirectory: "app",
+});
+
 export default defineConfig({
   plugins: [
     remixDevTools(),
-    !process.env.VITEST &&
-      remix({
-        ssr: false,
-        ignoredRouteFiles: ["**/.*"],
-        routes: async (defineRoutes) => {
-          return flatRoutes("pages", defineRoutes);
-        },
-        appDirectory: "app",
-      }),
     tsconfigPaths(),
     svgr(),
-  ],
+    !isVitest && remixPlugin,
+  ].filter(Boolean),
   test: {
     include: ["**/*.test.{ts,tsx}"],
     globals: true,
