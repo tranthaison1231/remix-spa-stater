@@ -4,6 +4,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { flatRoutes } from "remix-flat-routes";
 import svgr from "vite-plugin-svgr";
 import { remixDevTools } from "remix-development-tools";
+import AutoImport from "unplugin-auto-import/vite";
 
 const isVitest = Boolean(process.env.VITEST);
 
@@ -14,13 +15,22 @@ const remixPlugin = remix({
   appDirectory: "app",
 });
 
+const plugins = [
+  remixDevTools(),
+  tsconfigPaths(),
+  svgr(),
+  AutoImport({
+    imports: ["vitest"],
+    dts: true, // generate TypeScript declaration
+  }),
+];
+
+if (!isVitest) {
+  plugins.push(remixPlugin);
+}
+
 export default defineConfig({
-  plugins: [
-    remixDevTools(),
-    tsconfigPaths(),
-    svgr(),
-    !isVitest && remixPlugin,
-  ].filter(Boolean),
+  plugins: plugins,
   test: {
     include: ["**/*.test.{ts,tsx}"],
     globals: true,

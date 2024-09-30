@@ -123,6 +123,7 @@
 			".sst/*",
 			"build/*",
 			"sst.config.ts",
+			"auto-imports.d.ts",
 			"vite.config.ts"
 		]
 	}

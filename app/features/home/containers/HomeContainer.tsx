@@ -1,15 +1,15 @@
 import GalleryImages, {
-  type Photo,
-} from "~/features/home/components/GalleryImages";
-import { useEffect, useState } from "react";
-import { Button } from "~/core/components/ui/button";
-import { Link } from "@remix-run/react";
+  type Photo
+} from '~/features/home/components/GalleryImages';
+import { useEffect, useState } from 'react';
+import { Link } from '@remix-run/react';
+import { Button } from '~/core/components/atoms/button';
 
 export default function HomeContainer() {
   const [photos, setPhotos] = useState<Photo[]>([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos")
+    fetch('https://jsonplaceholder.typicode.com/photos')
       .then((response) => response.json())
       .then((data) => setPhotos(data));
   }, []);
