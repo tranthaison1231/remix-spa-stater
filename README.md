@@ -32,4 +32,8 @@ bun dev
 
 ## Script
 
-- All necessary scripts for this project are listed in the Makefile. Please carefully review the Makefile and execute the desired script accordingly.
+- All necessary scripts for this project are listed in the package.json. Please carefully review the Makefile and execute the desired script accordingly.
+
+## Documents
+
+- [Project Structure](docs/guidelines/folder-structure.md)
