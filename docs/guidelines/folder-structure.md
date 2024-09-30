@@ -6,6 +6,7 @@ The project follows Domain-Driven Design principles, with the following director
   - components: Contains the components of the application that localed on the features
   - containers: Contains the containers of the application that localed on the features
   - hooks: Contains the hooks of the application that localed on the features
+  - stores: Contains the store of the application that localed on the features
 - pages: Defines the routes of the application
 - core: Contains shared utilitie, constants, components, ... and other cross-cutting concerns.
   - components: Contains the shared components of the application
@@ -16,11 +17,7 @@ The project follows Domain-Driven Design principles, with the following director
 
 ### Flow
 
-![flow-clean-archiecture](../images/flow-clean-archiecture.png)
-
-### Deconstructing
-
-![deconstructing-clean-archiecture](../images/deconstructing-clean-archiecture.png)
+![flow-clean-archiecture](../images/structure-file.png)
 
 ## Tree
 
