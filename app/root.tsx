@@ -4,25 +4,26 @@ import {
   type MetaFunction,
   Outlet,
   Scripts,
-  ScrollRestoration
-} from '@remix-run/react';
-import './globals.css';
+  ScrollRestoration,
+} from "@remix-run/react";
+import "./globals.css";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'Very cool app | Remix' },
+    { title: "Very cool app | Remix" },
     {
-      property: 'og:title',
-      content: 'Very cool app'
+      property: "og:title",
+      content: "Very cool app",
     },
     {
-      name: 'description',
-      content: 'This app is the best'
-    }
+      name: "description",
+      content: "This app is the best",
+    },
   ];
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  console.info(import.meta.env.VITE_API_URL);
   return (
     <html lang="en">
       <head>

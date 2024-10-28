@@ -31,6 +31,9 @@ if (!isVitest) {
 
 export default defineConfig({
   plugins: plugins,
+  build: {
+    minify: "terser",
+  },
   test: {
     include: ["**/*.test.{ts,tsx}"],
     globals: true,
