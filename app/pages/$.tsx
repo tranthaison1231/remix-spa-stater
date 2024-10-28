@@ -1,8 +1,8 @@
-import type { MetaFunction } from '@remix-run/react';
-import NotFound from '~/core/components/organims/not-found';
+import type { MetaFunction } from "@remix-run/react";
+import NotFound from "~/shared/components/organisms/not-found";
 
 export const meta: MetaFunction = () => {
-  return [{ title: 'Very cool app | Home' }];
+  return [{ title: "Very cool app | Home" }];
 };
 
 function NotFoundPage() {

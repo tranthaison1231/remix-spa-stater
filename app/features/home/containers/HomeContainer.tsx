@@ -3,7 +3,7 @@ import GalleryImages, {
 } from '~/features/home/components/GalleryImages';
 import { useEffect, useState } from 'react';
 import { Link } from '@remix-run/react';
-import { Button } from '~/core/components/atoms/button';
+import { Button } from '~/shared/components/atoms/button';
 
 export default function HomeContainer() {
   const [photos, setPhotos] = useState<Photo[]>([]);
