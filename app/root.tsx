@@ -23,7 +23,6 @@ export const meta: MetaFunction = () => {
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  console.info(import.meta.env.VITE_API_URL);
   return (
     <html lang="en">
       <head>

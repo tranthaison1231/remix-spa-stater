@@ -6,6 +6,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function TailwindIntersectPage() {
-  console.info(import.meta.env.VITE_API_URL);
   return <TailwindIntersectContainer />;
 }

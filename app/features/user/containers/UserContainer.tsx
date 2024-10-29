@@ -46,7 +46,8 @@ export default function UserContainer() {
     budget: 1000,
   });
 
-  console.log(uniq([2, 1, 2]));
+  console.info(import.meta.env.VITE_API_URL);
+
   return (
     <div className="bg-white p-8 lg:p-12 lg:text-lg">
       <h1 className="text-2xl font-bold mb-4">User</h1>
